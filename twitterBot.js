@@ -7,7 +7,7 @@ var client = new Twitter({
   access_token_secret: '1uXU4iXhvuAmITG6JZ0GElmW5pcrJc2QNeHWLcdAB8sao'
 });
  
-client.get('search/tweets', {q: '#TheLastKingdom'}, function(error, tweets, response){
+client.get('search/tweets', {q: '#GOT'}, function(error, tweets, response){
 		[].forEach.call(tweets.statuses,function(e){
 			console.log(e.text);
 		})
